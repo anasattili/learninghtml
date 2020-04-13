@@ -3,7 +3,7 @@
 > In this chapters we learn about the basics of html in web pages structures and the primary basic syntax to organize and build a web page, and the syntax contain inside two tages(<>)
 
 # Basic Syntax:
-<!DOCTYPE html> declaration defines this document to be HTML5
+> <!DOCTYPE html> declaration defines this document to be HTML5
 <html>  is the root element of an HTML page
 <title>  specifies a title for the document
 <body>  contains the visible page content
