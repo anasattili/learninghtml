@@ -29,20 +29,26 @@ document.write('<h1>'+greeting+'</h1>');
 var showJor = function () {
 var word = prompt('if you want to see the jordan flag or map type it ');
 var picture;
-
+var numOfPic;
+while( word !=='flag' && word !=='map'){
+    word =prompt('please choose flag or map');
+}
+numOfPic =prompt('how many number of pictures do you want to see');
+ for(var i=1;i<=numOfPic;i++){
 if( word === 'flag')
 {
-    picture = '<img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Nuvola_Jordan_flag.svg/120px-Nuvola_Jordan_flag.svg.png">';
+    picture =  picture+'<img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Nuvola_Jordan_flag.svg/120px-Nuvola_Jordan_flag.svg.png">';
     }
     else if (word === 'map'){
 
-        picture = '<img src ="http://ontheworldmap.com/jordan/administrative-map-of-jordan-max.jpg">';
+        picture =  picture+'<img src ="http://ontheworldmap.com/jordan/administrative-map-of-jordan-max.jpg">';
 
         
     }
     else {
         picture = 'Thank you for visiting Jordan';
     }
+}
     return picture;
     
 }
