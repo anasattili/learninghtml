@@ -40,6 +40,9 @@ if( word === 'flag')
 
         
     }
+    else {
+        picture = 'Thank you for visiting Jordan';
+    }
     return picture;
     
 }
